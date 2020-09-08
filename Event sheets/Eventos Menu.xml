@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Menu</name>
+    <events>
+        <variable constant="0" name="PontosTotais" sid="981103197672709" static="0" type="number">0</variable>
+        <variable constant="0" name="Salvar" sid="295310612612228" static="0" type="number">0</variable>
+        <variable constant="0" name="HighScore" sid="495555261322196" static="0" type="number">0</variable>
+        <event-block sid="408427333069556">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="555963328025120" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="933410388793728" type="System">
+                    <param id="0" name="Variable">Tempo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="443963063374154">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="453369997399574" type="System">
+                    <param id="0" name="Variable">Tempo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="123984680246789" type="System">
+                    <param id="0" name="Variable">Tempo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="517013162665136" title="TrocarBackground">
+            <sub-events>
+                <event-block sid="137139676205091">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="926648668507448" type="System" />
+                        <condition id="-1" name="Compare X" sid="680080567503277" type="BackgroundMenu">
+                            <param id="0" name="Comparison">1</param>
+                            <param id="1" name="X co-ordinate">-2492</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="993289787691820" type="BackgroundMenu">
+                            <param id="0" name="X">BackgroundMenu.X - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="526458173536692">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="212477618680426" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="598472539526636" type="BackgroundMenu">
+                            <param id="0" name="X">-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="881074652590018" title="BotoesControle">
+            <sub-events>
+                <event-block sid="978404779594339">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="446382239540621" type="TouchScreen">
+                            <param id="0" name="Object">btnIniciar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="670353268118035" type="System">
+                            <param id="0" name="Layout">SelecaoFase</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="107096401416732">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="888362101432498" type="TouchScreen">
+                            <param id="0" name="Object">btns2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Close" sid="579524140209886" type="ElementosDesktop" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="787744104558990">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="878957357300984" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="108534073633367" type="TxtHighScore">
+                    <param id="0" name="Text">HighScore</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="542776505719580" title="SaveGame">
+            <sub-events>
+                <event-block sid="971991121605670">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="945372018731021" type="System" />
+                        <condition id="-14" name="Compare variable" sid="218204005744643" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-36" name="Save" sid="861352200105183" type="System">
+                            <param id="0" name="Slot">&quot;hit-001&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="677254135656093" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="279684176929147" type="System">
+                            <param id="0" name="Group name">&quot;SaveGame&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="181426736066572" title="DefinicoesGerais">
+            <sub-events>
+                <event-block sid="874221558661776">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="428232617733436" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="650532623587239" type="System">
+                            <param id="0" name="Group name">&quot;SaveGame&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="689147758795922" title="CarregarJogo">
+            <sub-events>
+                <event-block sid="217537600943777">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="418316665082384" type="System" />
+                        <condition id="-14" name="Compare variable" sid="142823818236908" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-37" name="Load" sid="955801464898436" type="System">
+                            <param id="0" name="Slot">&quot;hit-001&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="740550961220511" title="TransferePontos">
+            <sub-events>
+                <event-block sid="275333776260280">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="144261341661072" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="908734922949077" type="System">
+                            <param id="0" name="Variable">PontosTotais</param>
+                            <param id="1" name="Value">Pontos</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="403476558715064" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

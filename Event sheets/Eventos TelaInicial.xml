@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos TelaInicial</name>
+    <events>
+        <variable constant="0" name="Tempo" sid="783140262799757" static="0" type="number">0</variable>
+        <event-group description="" sid="540222215599231" title="FadeEntrada">
+            <sub-events>
+                <event-block sid="591050625939120">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="978819386460634" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="1" name="Start fade" sid="229949198700909" type="LogoHitKill" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="251452313181709" title="ConcluiFade">
+            <sub-events>
+                <event-block sid="281341185526438">
+                    <conditions>
+                        <condition behavior="Fade" id="0" name="On fade-out finished" sid="639360841146294" type="LogoHitKill" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="885748212463719" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

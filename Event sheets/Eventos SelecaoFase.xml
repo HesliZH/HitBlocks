@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos SelecaoFase</name>
+    <events>
+        <variable constant="0" name="Fase" sid="637769460072444" static="0" type="number">0</variable>
+        <event-group description="" sid="968751001802912" title="SelecionaFase">
+            <sub-events>
+                <event-block sid="323309199256025">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="841277197706515" type="TouchScreen">
+                            <param id="0" name="Object">Sprite</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="565203410356065" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="161790825564107">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="200369051695065" type="TouchScreen">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="291282427700400" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="694456268682620">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="816627043720311" type="TouchScreen">
+                            <param id="0" name="Object">Sprite3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="875409499567045" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="669205394730929">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="882561712439352" type="TouchScreen">
+                            <param id="0" name="Object">Sprite4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="372343446808016" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="853688067064854" title="ApareceBotao">
+            <sub-events>
+                <event-block sid="267062521214873">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="724429700785647" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="570076313541119" type="BtnIniciarFase">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="218474654795526" type="BtnIniciarFase">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="369776448565042" type="txtInicio">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="324041402049270" title="ZerarValores">
+            <sub-events>
+                <event-block sid="532657902582243">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="713984942029807" type="TouchScreen">
+                            <param id="0" name="Object">Sprite</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="970556003386145" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="286926987337508" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="221127147424955">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="333827629174808" type="TouchScreen">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="868280666975449" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="398738262711828" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="225533937197894">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="493733011834662" type="TouchScreen">
+                            <param id="0" name="Object">Sprite3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="750735408194597" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="930239053685237" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="461668184710281">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="142979999338947" type="TouchScreen">
+                            <param id="0" name="Object">Sprite4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="475395141750790" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="317444877832847" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="278671220431866" title="FasesSelecionadas">
+            <sub-events>
+                <event-block sid="859945513532326">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="203146131658011" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="780307876626222" type="FasesSelecionadas">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="556647961746988">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="852452754270443" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="368783192639621" type="FasesSelecionadas">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="794788171170695">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="551763106699715" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="429838811094574" type="FasesSelecionadas">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="536322451261456">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="663206757278423" type="System">
+                            <param id="0" name="Variable">Fase</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="461945251698945" type="FasesSelecionadas">
+                            <param id="0" name="Frame number">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="115131302440409" title="IniciaJogo">
+            <sub-events>
+                <event-block sid="262843749283681">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="729745039328330" type="TouchScreen">
+                            <param id="0" name="Object">BtnIniciarFase</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="449591617749937" type="System">
+                            <param id="0" name="Layout">Carregamento</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

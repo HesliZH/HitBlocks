@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Carregamento</name>
+    <events>
+        <include>Eventos Dicas</include>
+        <variable constant="0" name="TempoCarregamento" sid="559065449956220" static="0" type="number">0</variable>
+        <event-group description="" sid="128202440302131" title="ContabilizaTempo">
+            <sub-events>
+                <event-block sid="461391586559183">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="970439709771239" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="155746513760572" type="System">
+                            <param id="0" name="Variable">TempoCarregamento</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="360809993178432" title="EfetuarCarregamento">
+            <sub-events>
+                <event-block sid="819584577649886">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="805320269698761" type="System">
+                            <param id="0" name="Variable">TempoCarregamento</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="504560112332645" type="System">
+                            <param id="0" name="Layout">Fase</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="582987657550071" title="ControleAnimacoes">
+            <sub-events>
+                <event-block sid="383784492492457">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="824178966795173" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="307472839664180" type="Animacao">
+                            <param id="0" name="Angle">Animacao.Angle + 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="1">Fase</layout>
+        <event-sheet order="0">Eventos SelecaoFase</event-sheet>
+        <event-sheet order="2">Eventos fase</event-sheet>
+        <event-sheet active="1" order="3">Eventos Menu</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Sprites/" />
+        <folder expanded="0" path="object-folder/Sprites/Blocos/" />
+        <folder expanded="0" path="object-folder/Sprites/Paredes/" />
+        <folder expanded="0" path="object-folder/Sprites/Trigger Zone/" />
+        <folder expanded="0" path="object-folder/Sprites/Background/" />
+        <folder expanded="0" path="object-folder/Sprites/Textos/" />
+        <folder expanded="0" path="object-folder/Sprites/Botões/" />
+        <folder expanded="1" path="object-folder/Sprites/Logo/" />
+        <folder expanded="0" path="object-folder/Sprites/TileMap/" />
+        <folder expanded="0" path="object-folder/Objetos programação/" />
+        <folder expanded="0" path="object-folder/Controles/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/block/" />
+        <folder expanded="1" path="animation-folder/FallingBlock/" />
+        <folder expanded="1" path="animation-folder/wall/" />
+        <folder expanded="1" path="animation-folder/control/" />
+        <folder expanded="1" path="animation-folder/rowCheck/" />
+        <folder expanded="1" path="animation-folder/ControlePerdeu/" />
+        <folder expanded="1" path="animation-folder/Background/" />
+        <folder expanded="1" path="animation-folder/Background_Menu/" />
+        <folder expanded="1" path="animation-folder/FundoMenu/" />
+        <folder expanded="1" path="animation-folder/FundoHighScore/" />
+        <folder expanded="1" path="animation-folder/FundoPreto/" />
+        <folder expanded="1" path="animation-folder/FasesSelecionadas/" />
+        <folder expanded="1" path="animation-folder/TxtMenu/" />
+        <folder expanded="1" path="animation-folder/btns/" />
+        <folder expanded="1" path="animation-folder/btns2/" />
+        <folder expanded="1" path="animation-folder/InfoVersao/" />
+        <folder expanded="1" path="animation-folder/Versao/" />
+        <folder expanded="1" path="animation-folder/HighScore/" />
+        <folder expanded="1" path="animation-folder/SelecaoDeFase/" />
+        <folder expanded="1" path="animation-folder/btnIniciar/" />
+        <folder expanded="1" path="animation-folder/btnCreditos/" />
+        <folder expanded="1" path="animation-folder/BtnIniciarFase/" />
+        <folder expanded="1" path="animation-folder/LogoHitKill/" />
+        <folder expanded="1" path="animation-folder/Animacao/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+    </folders-expanded>
+</c2uistate>
